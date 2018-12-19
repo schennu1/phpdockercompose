@@ -1,0 +1,11 @@
+#docker-compose.yml
+version: '3'
+services:
+  web:
+   image: nginx
+   volumes:
+     - ./src:/var/www/html       
+  php:
+   image: php
+   volumes:
+     - ./src:/var/www/html
